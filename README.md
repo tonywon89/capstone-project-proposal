@@ -39,3 +39,16 @@ FeedMeScience is a web application inspired by Feedly that will be built using R
 - [ ] User can set preferences (bonus feature)
 - [ ] User can select a theme for sidebar (bonus feature)
 - [ ] User can share collections through a url (bonus feature)
+
+## Design Docs
+* [View Wireframes][views]
+* [React Components][components]
+* [Flux Cycles][flux-cycles]
+* [API endpoints][api-endpoints]
+* [DB schema][schema]
+
+[views]: ./docs/views.md
+[components]: ./docs/components.md
+[flux-cycles]: ./docs/flux-cycles.md
+[api-endpoints]: ./docs/api-endpoints.md
+[schema]: ./docs/schema.md
