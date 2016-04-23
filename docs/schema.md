@@ -8,9 +8,9 @@ email           | string    | not null, indexed, unique
 password_digest | string    | not null
 session_token   | string    | not null, indexed, unique
 
-Associations:  
-  has_many: collections  
-  has_many: feeds, through: collections  
+**Associations:**  
+* has_many: collections  
+* has_many: feeds, through: collections  
 
 
 ##feeds
@@ -23,11 +23,9 @@ url         | string    | not null
 
 **Will have a #parse that gets the information from the feed url**
 
-Associations:
-
-  has_many: collections, through: collection_feeds
-
-  has_many: users, through: collections
+**Associations:**  
+* has_many: collections, through: collection_feeds
+* has_many: users, through: collections
 
 ##collection_feeds
 
@@ -37,9 +35,9 @@ id            | integer   | not null, primary key
 feed_id       | integer   | not null, indexed
 collection_id | integer   | not null, indexed
 
-Associations:  
-    belongs_to: feed  
-    belongs_to: collection  
+**Associations:**   
+* belongs_to: feed  
+* belongs_to: collection  
 
 ## collections
 
@@ -49,6 +47,6 @@ id          | integer   | not null, primary key
 name        | string    | not null
 user_id     | integer   | not null, indexed
 
-Associations:  
-  belongs_to: user  
-  has_many: feeds, through: collection_feeds  
+**Associations:**  
+* belongs_to: user  
+* has_many: feeds, through: collection_feeds  
