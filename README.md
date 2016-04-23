@@ -52,3 +52,37 @@ FeedMeScience is a web application inspired by Feedly that will be built using R
 [flux-cycles]: ./docs/flux-cycles.md
 [api-endpoints]: ./docs/api-endpoints.md
 [schema]: ./docs/schema.md
+
+## Implementation Timeline
+
+### Phase 1: Backend setup and User Authentication (0.5 days)
+
+**Objective:** Functioning rails project with Authentication
+
+- [ ] create new project
+- [ ] create `User` model
+- [ ] authentication
+- [ ] user signup/signin pages
+- [ ] blank landing page after sign in
+
+### Phase 2
+
+<!-- ### Phase 2: Collections Model, API, and basic APIUtil (1 day)
+
+**Objective:** Collections can be created, read, edited, and destroyed through the API
+
+- [ ] create `Collection` model
+- [ ] seed the database with a small amount of test data
+- [ ] CRUD API for collections, should be nested under single user (`CollectionsController`)
+- [ ] jBuilder views for collections
+- [ ] setup Webpack and Flux scaffold
+- [ ] setup `APIUtil` to interact with the API
+- [ ] test out API interaction in the console
+
+### Phase 3: Flux Architecture and Router (2 days)
+
+**Objective:** Collections can be created, read, edited, and destroyed with the user interfact.
+
+- [ ] setup the flux loop with skeleton files
+- [ ] setup React Router
+- [ ] implement each collection component, building out the flux loop as needed -->
