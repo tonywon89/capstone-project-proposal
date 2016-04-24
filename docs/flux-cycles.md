@@ -54,7 +54,7 @@
   0. `addCollection` is set as the callback to update the collections
 
 * `fetchSingleCollection`
- 0. invoked from `CollectionDetail`
+ 0. invoked from `CollectionArticles`
  0. `GET /api/collections/:id` is called
  0. `receiveSingleCollection is set as the callback`
 
@@ -93,7 +93,7 @@
 ### CollectionStore Listeners
 
 * `CollectionsIndex`
-* `CollectionDetail`
+* `CollectionArticles`
 * `AddFeedCollectionIndex`
 * `SidebarCollectionIndex`
 
