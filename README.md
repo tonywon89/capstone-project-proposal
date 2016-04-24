@@ -1,8 +1,8 @@
-#FeedMeScience
+#CuriousFeed
 
 ## Minimum Viable Product
 
-FeedMeScience is a web application inspired by Feedly that will be built using Ruby on Rails and React.js. By the end of Week 9, this app will, at a minimum, satisfy the following criteria:
+CuriousFeed is a web application inspired by Feedly that will be built using Ruby on Rails and React.js. By the end of Week 9, this app will, at a minimum, satisfy the following criteria:
 
 - [ ] New account creation, login, and guest/demo login
 - [ ] Smooth, bug-free navigation
@@ -65,9 +65,34 @@ FeedMeScience is a web application inspired by Feedly that will be built using R
 - [ ] user signup/signin pages
 - [ ] blank landing page after sign in
 
-### Phase 2
+### Phase 2: Feeds Model, API, and basic APIUtil (0.5 day)
 
-<!-- ### Phase 2: Collections Model, API, and basic APIUtil (1 day)
+**Objective** Feeds can be retrieved through the API
+
+- [ ] create `Feed` model
+- [ ] seed the database with small amount of rss feeds from websites that provide it
+- [ ] Retrieve feeds data by using an FeedAPI (`FeedsController`) to fetch the feed data
+- [ ] jBuilder views for parsed data from Feed url using Feedjira gem
+- [ ] setup Webpack and Flux scaffold
+- [ ] setup  `ApiUtil` to interact with the API
+- [ ] test out API interaction in the console
+- [ ] setup `FeedStore`, `ServerActions`, `ClientActions`
+
+### Phase 3: Frontend Feeds display  (1.5 day)
+
+**Objective** Feeds are fetched and displayed properly in their components
+
+- [ ] setup the `FeedIndex` component
+  - [ ] setup spacing of between each `FeedIndexItem`
+  - [ ] pass on each feed to `FeedIndexItem`
+- [ ] setup `FeedIndexItem` component
+  - [ ] displays title and logo of website (are links to the website)
+  - [ ] displays description of website (clicking opens up modal with detail)
+  - [ ] displays an "Add" button (clicking opens up a different sidebar with adding collection)
+  - [ ] displays the photo and title of the first article (clicking opens an ArticleDetail)
+- [ ] test by placing `FeedIndex` in DOM
+
+### Phase 4: Collections Model, API and basic APIUtil (1 day)
 
 **Objective:** Collections can be created, read, edited, and destroyed through the API
 
@@ -78,6 +103,21 @@ FeedMeScience is a web application inspired by Feedly that will be built using R
 - [ ] setup Webpack and Flux scaffold
 - [ ] setup `APIUtil` to interact with the API
 - [ ] test out API interaction in the console
+
+### Bonus (TBD)
+
+- [ ] FeedIndexItem has number of readers, number of articles/Week
+- [ ] FeedIndexItem photo is black and white initially, then fades into color
+- [ ] Modals can have multiple tabs
+- [ ]
+
+
+
+
+
+<!-- ### Phase 2: Collections Model, API, and basic APIUtil (1 day)
+
+
 
 ### Phase 3: Flux Architecture and Router (2 days)
 
