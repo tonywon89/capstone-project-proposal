@@ -1,5 +1,9 @@
 #FeedMyCuriosity
 
+[Heroku link][heroku] FeedMyCuriosity
+
+[heroku]: http://www.herokuapp.com
+
 ## Minimum Viable Product
 
 FeedMyCuriosity is a web application inspired by Feedly that will be built using Ruby on Rails and React.js. By the end of Week 9, this app will, at a minimum, satisfy the following criteria:
@@ -166,8 +170,8 @@ FeedMyCuriosity is a web application inspired by Feedly that will be built using
   - [ ] `CollectionForm`
 
 - [ ] setup the flux loop with all the interactive buttons
-  - [ ] "Add Feed Button" goes to a modal for collections   
-
+  - [ ] Look in phases folder for specific detail   
+  - [ ]
 
 
 
