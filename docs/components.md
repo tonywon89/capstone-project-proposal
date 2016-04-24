@@ -6,7 +6,7 @@
     * `SidebarCollectionIndexItem`
   * `Children`
     * `Home` (Index Route)
-      * `CollectionDetail` (for `Today` collection)
+      * `CollectionArticles` (for `Today` collection)
         * `ArticleIndex`
           * `ArticleIndexItem`
     * `CollectionIndex`
@@ -15,7 +15,7 @@
     * `FeedIndex`
       * `FeedIndexItem`
         * `FeedIndexItemArticle`
-    * `CollectionDetail`
+    * `CollectionArticles`
       * `ArticleIndex`
         * `ArticleIndexItem`
     * `CollectionFeedDetail`

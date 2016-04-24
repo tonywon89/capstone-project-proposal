@@ -99,6 +99,28 @@
 
 ## Article Cycles
 
+### Articles API Request
+
+* `saveArticle`
+  0. invoked by `ArticleDetail`
+  0. `POST /api/articles/:id` is made
+  0. `notifySave` is set as callback
+
+* `unsaveArticle`
+  0. invoked by `ArticleDetail`, `CollectionArticles`
+  0. `DELETE /api/articles/:id`
+  0. `removeCollectionArticle` is set as callback
+
+### Articles API Response
+
+* `notifySave`
+  0. invoked by an API callback
+  0. alerts that a save has been made
+
+* `removeCollectionArticle`
+  0. invoked by an API callback
+  0. `CollectionStore` updates `_selectedCollections` to reflect new state of collection and emits change
+
 ### Articles Client Actions (no need for API)
 
 * `receiveArticle`
