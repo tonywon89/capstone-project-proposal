@@ -18,6 +18,9 @@
     * `CollectionDetail`
       * `ArticleIndex`
         * `ArticleIndexItem`
+    * `CollectionFeedDetail`
+      * `ArticleIndex`
+        * `ArticleIndexItem`
   * `Details`
     * `FeedDetail`
     * `ArticleDetail`
