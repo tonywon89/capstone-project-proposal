@@ -103,5 +103,11 @@
 
 * `receiveArticle`
   0. invoked by `FeedIndexItemArticle`, `ArticleItem`
+  0. `ArticleStore` update `_article` and emits change
+
+* `removeArticle`
+  0. invoked when user clicks the close button in `PopOutDetails`
 
 ### ArticleStore Listeners
+
+* `ArticleDetail`
