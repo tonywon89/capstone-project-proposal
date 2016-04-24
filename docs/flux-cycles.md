@@ -1,0 +1,89 @@
+# Flux Cycles
+
+## Feed Cycles
+
+### Feeds API Request Action
+
+* `fetchAllFeeds`
+  0. invoked from `FeedsIndex`
+  `didMount`
+  0. `GET /api/feeds` is called
+  0. `receiveAllFeeds` is set as the callback.
+
+* `fetchSingleFeed`
+  0. invoked when feed is clicked from `FeedIndexItem`, `FeedItem` within `CollectionIndexItem`,
+
+### Feeds API Response Actions
+
+* `receiveAllFeeds`
+  0. invoked from an API callback
+  0. `FeedStore` updates `_feeds` and emits change.
+
+* `receiveSingleFeed`
+ 0. invoked from API callback
+ 0. `FeedStore` updates `_selectedFeed` and emits change.
+
+### FeedStore Listeners
+
+* `FeedsIndex` component listens to `FeedStore`
+* `FeedDetail` component listens to `FeedStore`
+
+## Collection Cycles
+
+### Collections API Request
+
+* `fetchCollections(user)`
+  0. invoked from `CollectionIndex`, `SidebarCollectionIndex`, and `AddFeedCollectionIndex`
+  0. `GET /api/users/:user_id/collections` is called
+  0. `receiveCollections` is set as the callback
+
+* `createCollection`
+  0. invoked from new collection button `onClick` in `CollectionsIndex` and `AddFeedSidebar` form
+  0. `POST /api/collections` is called
+  0. `addCollection` is set as the callback to update the collections
+
+* `fetchSingleCollection`
+ 0. invoked from `CollectionDetail`
+ 0. `GET /api/collections/:id` is called
+ 0. `receiveSingleCollection is set as the callback`
+
+* `updateCollection`
+ 0. invoked from `AddFeedCollectionIndexItem` and `CollectionIndexItem`
+ 0. `PATCH /api/collections/:id` is called
+ 0. `updateCollection` is set as the callback  
+
+* `destroyCollection`
+  0. invoked from `CollectionIndex`
+  0. `DELETE /api/collections/:id` is called
+  0. `removeCollection` is set as the callback
+
+### Collections API Response Actions
+
+* `receiveCollections(user)`
+  0. invoked from an API callback
+  0. `CollectionStore` updates `_collections` and emits change.
+
+* `addCollection`
+  0. invoked from an API callback
+  0. `CollectionStore` adds collection to `_collections` and emits change
+
+* `receiveSingleCollection`
+  0. invoked from an API callback
+  0. `CollectionStore` updates `_selectedCollection` and emits change
+
+* `updateCollection`
+  0. invoked from an API callback
+  0. `CollectionStore` replaces old collection with updated collection in `_collections` and emits change
+
+* `removeCollection`
+  0. invoked from an API callback
+  0. `CollectionStore` removes collection from `_collections` and emits change
+
+### CollectionStore Listeners
+
+* `CollectionsIndex` component listens to `CollectionStore`
+* `CollectionDetail` component listens to `CollectionStore`
+* `AddFeedCollectionIndex` component listens to `CollectionStore`
+* `SidebarCollectionIndex` component listens to `CollectionStore`
+
+## Article Cycles
