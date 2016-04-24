@@ -13,7 +13,7 @@ CuriousFeed is a web application inspired by Feedly that will be built using Rub
 - [ ] A production README, replacing this README
 
 ## Product Goals and Priorities
-
+### MVP
 - [ ] Create an account (MVP)
 - [ ] Log in/ Log out, including as a Guest/Demo User (MVP)
 - [ ] Make collections (MVP)
@@ -22,23 +22,27 @@ CuriousFeed is a web application inspired by Feedly that will be built using Rub
 - [ ] Provide feeds for the user to choose from (MVP)
 - [ ] Provides link to go to feed's website (MVP)
 - [ ] Feeds display recent articles (MVP)
-- [ ] Feeds show number of hits (expected feature, but not MVP)
-- [ ] Categorizes feeds by date (expected feature, but not MVP)
-- [ ] Mark article as read once user has clicked on article in feed (expected feature, but not MVP)
+
+### Expected Features
+- [ ] Feeds show number of hits
+- [ ] Categorizes feeds by date
+- [ ] Mark article as read once user has clicked on article in feed
 - [ ] Displays time the article was posted ( expected feature but not MVP)
-- [ ] Able to organize collections (expected feature, but not MVP)
-- [ ] Able to search for feeds (expected feature, but not MVP)
-- [ ] Have subcategories of feeds (expected feature, but not MVP)
-- [ ] Feeds have logos, Users have a profile picture (expected feature, but not MVP)
-- [ ] Have a button to save articles to read for later (expected feature, but not MVP)
-- [ ] User can hide or save articles (expected feature, but not MVP)
-- [ ] User can choose how to display the articles of a feed (bonus feature)
-- [ ] Embed videos for feeds with videos (bonus feature)
-- [ ] Displays related feeds when displaying articles of a particular feed (bonus feature)
-- [ ] User can mark all of the articles of a feed as read all at once (bonus feature)
-- [ ] User can set preferences (bonus feature)
-- [ ] User can select a theme for sidebar (bonus feature)
-- [ ] User can share collections through a url (bonus feature)
+- [ ] Able to organize collections
+- [ ] Able to search for feeds
+- [ ] Have subcategories of feeds
+- [ ] Feeds have logos, Users have a profile picture
+- [ ] Have a button to save articles to read for later
+- [ ] User can hide or save articles
+
+### Bonus Features
+- [ ] User can choose how to display the articles of a feed
+- [ ] Embed videos for feeds with videos
+- [ ] Displays related feeds when displaying articles of a particular feed
+- [ ] User can mark all of the articles of a feed as read all at once
+- [ ] User can set preferences
+- [ ] User can select a theme for sidebar
+- [ ] User can share collections through a url
 
 ## Design Docs
 * [View Wireframes][views]
