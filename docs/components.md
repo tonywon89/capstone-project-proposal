@@ -21,8 +21,11 @@
     * `CollectionFeedDetail`
       * `ArticleIndex`
         * `ArticleIndexItem`
-  * `Details`
+  * `PopOutDetails`
     * `FeedDetail`
+      * `FeedHeader`
+      * `ArticleDateIndex`
+      * `ArticleItem`
     * `ArticleDetail`
   * `AddFeedSidebar`
     * `AddFeedCollectionIndex`
