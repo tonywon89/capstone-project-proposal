@@ -12,7 +12,13 @@
 
 * `fetchSingleFeed`
   0. invoked when feed is clicked from `FeedIndexItem`, `FeedItem` within `CollectionIndexItem`,
+  0. `GET /api/feeds/:id` is called
+  0. `receiveSingleFeed` is set as the callback
 
+* `fetchCollectionFeed`
+  0. invoked by `SidebarCollectionIndexItem`
+  0. `GET /api/feeds/:id` is called
+  0. `receiveCollectionFeed` is set as the callback
 ### Feeds API Response Actions
 
 * `receiveAllFeeds`
@@ -20,13 +26,18 @@
   0. `FeedStore` updates `_feeds` and emits change.
 
 * `receiveSingleFeed`
- 0. invoked from API callback
- 0. `FeedStore` updates `_selectedFeed` and emits change.
+ 0. invoked from an API callback
+ 0. `FeedStore` updates `_feed` and emits change.
+
+* `receivedCollectionFeed`
+  0. invoked from an API callback
+  0. `FeedStore` updates `_collectionFeed`
 
 ### FeedStore Listeners
 
-* `FeedsIndex` component listens to `FeedStore`
-* `FeedDetail` component listens to `FeedStore`
+* `FeedsIndex`
+* `FeedDetail`
+* `CollectionFeedDetail`
 
 ## Collection Cycles
 
@@ -81,9 +92,9 @@
 
 ### CollectionStore Listeners
 
-* `CollectionsIndex` component listens to `CollectionStore`
-* `CollectionDetail` component listens to `CollectionStore`
-* `AddFeedCollectionIndex` component listens to `CollectionStore`
-* `SidebarCollectionIndex` component listens to `CollectionStore`
+* `CollectionsIndex`
+* `CollectionDetail`
+* `AddFeedCollectionIndex`
+* `SidebarCollectionIndex`
 
 ## Article Cycles
