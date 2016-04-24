@@ -19,6 +19,7 @@
   0. invoked by `SidebarCollectionIndexItem`
   0. `GET /api/feeds/:id` is called
   0. `receiveCollectionFeed` is set as the callback
+
 ### Feeds API Response Actions
 
 * `receiveAllFeeds`
@@ -97,19 +98,48 @@
 * `AddFeedCollectionIndex`
 * `SidebarCollectionIndex`
 
+## Collection_Feeds Cycles
+
+### API Request
+* `addFeedToCollection`
+  0. invoked by `AddFeedCollectionIndexItem`
+  0. `POST /api/collection_feeds`
+  0. `updateCollection` set as callback
+
+* `removeFeedFromCollection`
+  0. invoked by `CollectionIndexItem`, `CollectionFeedDetail`
+  0. `DELETE /api/collection_feeds/:id`
+  0. `updateCollection` set as callback
+
+### API Response
+
+* `updateCollection`
+  0. invoked by an API callback
+  0. `CollectionStore` changes to reflect change
+  0. `FeedStore` responds with change to have add button or not 
+
+### Store Listeners
+
+* All listeners of `FeedStore` and `CollectionStore`
+
 ## Article Cycles
 
 ### Articles API Request
 
 * `saveArticle`
   0. invoked by `ArticleDetail`
-  0. `POST /api/articles/:id` is made
-  0. `notifySave` is set as callback
+  0. `POST /api/articles` is made
+  0. `associateArticle` is set as the callback
 
 * `unsaveArticle`
   0. invoked by `ArticleDetail`, `CollectionArticles`
   0. `DELETE /api/articles/:id`
-  0. `removeCollectionArticle` is set as callback
+  0. `removeCollectionArticle` is set as the callback
+
+* `associateArticle`
+  0. invoked by `saveArticle`
+  0. `POST /api/saved_collection_articles`
+  0. `notifySave` is set as the callback
 
 ### Articles API Response
 

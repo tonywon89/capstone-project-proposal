@@ -71,7 +71,7 @@ feed_id      | integer   | not null, indexed
 * belongs_to: feed
 * has_many: collections, through: saved_collection_articles_join
 
-## saved_collection_articles_join
+## saved_collection_articles
 > For articles that are saved for later. The collection refers to a user's saved_collection  
 
 column name       | data type | details
@@ -82,4 +82,4 @@ article_id        | integer   | not null, indexed
 
 **Associations:**
 * belongs_to: save_collection, class: Collection
-* belongs_to: id
+* belongs_to: article
