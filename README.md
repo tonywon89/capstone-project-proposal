@@ -107,7 +107,7 @@ FeedMyCuriosity is a web application inspired by Feedly that will be built using
   - [ ] displays the photo and title of the first article (clicking opens an ArticleDetail)
 - [ ] test by placing `FeedIndex` in DOM
 
-### Phase 3.5: FeedIndex and FeedIndexItem, deploy to Heroku (0.5 days)
+### Phase 3.5: Style FeedIndex and FeedIndexItem, deploy to Heroku (0.5 days)
 
 - [ ] style `FeedIndex` to hold `FeedItem`s with proper spacing
 - [ ] make `FeedIndexItem` resemble the ones on Feedly website
@@ -139,8 +139,8 @@ FeedMyCuriosity is a web application inspired by Feedly that will be built using
   - [ ] has a "pin" button
     - [ ] add functionality to make the side bar keep displayed
     - [ ] change text of "pin" to "unpin" and vice versa  
-  - [ ] has a Today link
-  - [ ] has a save for later link
+  - [ ] has a "Today" link
+  - [ ] has a "Saved For Later" link
   - [ ] has a link to an add content
   - [ ] user's collections are shown (clicks show the collection)
     - [ ] each collection has a dropdown that displays the feeds
@@ -150,8 +150,26 @@ FeedMyCuriosity is a web application inspired by Feedly that will be built using
   - [ ] has login button
   - [ ] has login as demo user (with a short descriptive text)
   - [ ] has sign up button
-  - [ ] buttons open up a modal with form
+  - [ ] buttons open up a modal
+    - [ ] has a form
+    - [ ] has a submit button
+
 - [ ] Add the styles to make it look nice
+
+### Phase 6: Flux Architecture and React Router (1.5 days)
+
+**Objective** Allow user to CRUD functionality for collections and feeds through user interface.
+
+- [ ] implement collection components, building out the flux loop as needed
+  - [ ] `CollectionsIndex`
+  - [ ] `CollectionIndexItem`
+  - [ ] `CollectionForm`
+
+- [ ] setup the flux loop with all the interactive buttons
+  - [ ] "Add Feed Button" goes to a modal for collections   
+
+
+
 
 ### Bonus (TBD)
 
