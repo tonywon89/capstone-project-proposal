@@ -1,13 +1,13 @@
-#CuriousFeed
+#FeedMyCuriosity
 
 ## Minimum Viable Product
 
-CuriousFeed is a web application inspired by Feedly that will be built using Ruby on Rails and React.js. By the end of Week 9, this app will, at a minimum, satisfy the following criteria:
+FeedMyCuriosity is a web application inspired by Feedly that will be built using Ruby on Rails and React.js. By the end of Week 9, this app will, at a minimum, satisfy the following criteria:
 
 - [ ] New account creation, login, and guest/demo login
 - [ ] Smooth, bug-free navigation
 - [ ] Adequate seed data to demonstrate the site's features
-- [ ] The minimally necessary features for a Feedly-inspired site: creating collections, adding or removing feeds to collections, displaying the feeds of the user, and providing feeds for the user to choose from
+- [ ] The minimally necessary features for a Feedly-inspired site: CRUD collections, displaying the feeds of the user, and providing feeds for the user to choose from
 - [ ] Hosting on Heroku
 - [ ] CSS styling that is satisfactorily visually appealing
 - [ ] A production README, replacing this README
@@ -64,12 +64,23 @@ CuriousFeed is a web application inspired by Feedly that will be built using Rub
 **Objective:** Functioning rails project with Authentication
 
 - [ ] create new project
+- [ ] setup Webpack and Flux scaffold
 - [ ] create `User` model
 - [ ] authentication
+  - [ ] ensure_session_token
+  - [ ] reset_session_token
+  - [ ] generate session_token
+  - [ ] current_user
+  - [ ] password=
+  - [ ] validations
+  - [ ] logout!
+  - [ ] login
 - [ ] user signup/signin pages
+  - [ ] Make views for now, refactor into React Component later
 - [ ] blank landing page after sign in
+- [ ] seed some users to database
 
-### Phase 2: Feeds Model, API, and basic APIUtil (0.5 day)
+### Phase 2: Feeds Model, API, basic APIUtil, Actions, and STORE (0.5 days)
 
 **Objective** Feeds can be retrieved through the API
 
@@ -77,17 +88,17 @@ CuriousFeed is a web application inspired by Feedly that will be built using Rub
 - [ ] seed the database with small amount of rss feeds from websites that provide it
 - [ ] Retrieve feeds data by using an FeedAPI (`FeedsController`) to fetch the feed data
 - [ ] jBuilder views for parsed data from Feed url using Feedjira gem
-- [ ] setup Webpack and Flux scaffold
-- [ ] setup  `ApiUtil` to interact with the API
+- [ ] setup `ApiUtil` to interact with the API
 - [ ] test out API interaction in the console
-- [ ] setup `FeedStore`, `ServerActions`, `ClientActions`
+- [ ] setup `FeedStore`, `FeedServerActions`, `FeedClientActions`
+    - [ ] write the methods
+    - [ ] test the methods
 
-### Phase 3: Frontend Feeds display  (1.5 day)
+### Phase 3: Frontend Feeds display  (1.5 days)
 
 **Objective** Feeds are fetched and displayed properly in their components
 
 - [ ] setup the `FeedIndex` component
-  - [ ] setup spacing of between each `FeedIndexItem`
   - [ ] pass on each feed to `FeedIndexItem`
 - [ ] setup `FeedIndexItem` component
   - [ ] displays title and logo of website (are links to the website)
@@ -96,37 +107,55 @@ CuriousFeed is a web application inspired by Feedly that will be built using Rub
   - [ ] displays the photo and title of the first article (clicking opens an ArticleDetail)
 - [ ] test by placing `FeedIndex` in DOM
 
-### Phase 4: Collections Model, API and basic APIUtil (1 day)
+### Phase 3.5: FeedIndex and FeedIndexItem, deploy to Heroku (0.5 days)
+
+- [ ] style `FeedIndex` to hold `FeedItem`s with proper spacing
+- [ ] make `FeedIndexItem` resemble the ones on Feedly website
+- [ ] deploy to Heroku
+
+### Phase 4: Collections Model, API, basic APIUtil, and Store  (1 day)
 
 **Objective:** Collections can be created, read, edited, and destroyed through the API
 
 - [ ] create `Collection` model
-- [ ] seed the database with a small amount of test data
-- [ ] CRUD API for collections, should be nested under single user (`CollectionsController`)
+- [ ] CRUD API for collections, should be nested under single user (`CollectionsController`) (Under 'Organize' in sidebar)
 - [ ] jBuilder views for collections
-- [ ] setup Webpack and Flux scaffold
-- [ ] setup `APIUtil` to interact with the API
-- [ ] test out API interaction in the console
+- [ ] seed the database with some collections under existing users
+  - [ ] Add feeds to collections
+- [ ] test APIUtil interaction with API in the console
+- [ ] implement `CollectionClientActions` and `CollectionServerActions` methods for collections
+- [ ] create `CollectionStore`
+- [ ] test action and store methods
+
+### Phase 5: Sidebar (1 day)
+
+**Objective** Display a sidebar with the username, collections and their feeds, and other links when logged in, else generic page
+
+- [ ] Make a sidebar component
+  - [ ] two cases: logged in or not logged in
+  - [ ] displays different things depending on log in state
+- [ ] logged in display  
+  - [ ] username at the bottom, with logout button
+  - [ ] has a "pin" button
+    - [ ] add functionality to make the side bar keep displayed
+    - [ ] change text of "pin" to "unpin" and vice versa  
+  - [ ] has a Today link
+  - [ ] has a save for later link
+  - [ ] has a link to an add content
+  - [ ] user's collections are shown (clicks show the collection)
+    - [ ] each collection has a dropdown that displays the feeds
+  - [ ] has a "organize collections" link
+- [ ] logged out display  
+  - [ ] has title of website and brief catch phase
+  - [ ] has login button
+  - [ ] has login as demo user (with a short descriptive text)
+  - [ ] has sign up button
+  - [ ] buttons open up a modal with form
+- [ ] Add the styles to make it look nice
 
 ### Bonus (TBD)
 
 - [ ] FeedIndexItem has number of readers, number of articles/Week
 - [ ] FeedIndexItem photo is black and white initially, then fades into color
 - [ ] Modals can have multiple tabs
-- [ ]
-
-
-
-
-
-<!-- ### Phase 2: Collections Model, API, and basic APIUtil (1 day)
-
-
-
-### Phase 3: Flux Architecture and Router (2 days)
-
-**Objective:** Collections can be created, read, edited, and destroyed with the user interfact.
-
-- [ ] setup the flux loop with skeleton files
-- [ ] setup React Router
-- [ ] implement each collection component, building out the flux loop as needed -->
+- [ ] Preferences link
