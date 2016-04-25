@@ -169,7 +169,7 @@ FeedMyCuriosity is a web application inspired by Feedly that will be built using
 - [ ] Add the styles to make it look nice
 - [ ] deploy to Heroku
 
-### Phase 6: Flux Architecture and React Router (2 days)
+### Phase 6: Flux Architecture for Collections and Articles and React Router (2 days)
 
 **Objective** Allow user to CRUD functionality for collections and articles through user interface.
 

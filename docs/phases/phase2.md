@@ -11,12 +11,9 @@
 * api/feeds/index.json.jBuilder
 * api/feeds/show.json.jBuilder
 
-
 ## Flux
 ### Views (React Components)
-* FeedIndex
-* -FeedIndexItem
-* -FeedIndexItemArticle
+
 
 ### Stores
 * FeedStore
@@ -28,9 +25,6 @@
 * ApiActions.receiveAllFeeds -> triggered by ApiUtil
 * ApiActions.receiveSingleFeed
 * ApiActions.receiveCollectionFeed
-* FeedActions.fetchAllFeeds
-* FeedActions.fetchSingleFeed
-* FeedActions.fetchCollectionFeed
 
 ### ApiUtil
 * ApiUtil.fetchAllFeeds
@@ -40,4 +34,4 @@
 ## Gems/Libraries
 * Flux Dispatcher (npm)
 * Twitter Bootstrap
-* Feedjira (gem)
+* Feedjira (Gem)
