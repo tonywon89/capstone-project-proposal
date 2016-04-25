@@ -18,16 +18,16 @@ FeedMyCuriosity is a web application inspired by Feedly that will be built using
 
 ## Product Goals and Priorities
 ### MVP
-- [ ] Create an account (MVP)
-- [ ] Log in/ Log out, including as a Guest/Demo User (MVP)
-- [ ] Provide feeds for the user to choose from (MVP)
-- [ ] Make and delete collections (MVP)
-- [ ] Display user's feeds and collections (MVP)
-- [ ] Add and remove feeds from collections (MVP)
-- [ ] Provides link to go to feed's website (MVP)
-- [ ] Feeds display recent articles (MVP)
-- [ ] Displays specific feeds (MVP)
-- [ ] Displays specific articles (MVP)
+- [ ] Create an account
+- [ ] Log in/ Log out, including as a Guest/Demo User
+- [ ] Provide feeds for the user to choose from
+- [ ] Make and delete collections
+- [ ] Display user's feeds and collections
+- [ ] Add and remove feeds from collections
+- [ ] Provides link to go to feed's website
+- [ ] Feeds display recent articles
+- [ ] Displays specific feeds
+- [ ] Displays specific articles
 
 ### Expected Features
 - [ ] Users can save articles
