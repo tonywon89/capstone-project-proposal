@@ -30,7 +30,7 @@
  0. invoked from an API callback
  0. `FeedStore` updates `_feed` and emits change.
 
-* `receivedCollectionFeed`
+* `receiveCollectionFeed`
   0. invoked from an API callback
   0. `FeedStore` updates `_collectionFeed`
 
@@ -116,7 +116,7 @@
 * `updateCollection`
   0. invoked by an API callback
   0. `CollectionStore` changes to reflect change
-  0. `FeedStore` responds with change to have add button or not 
+  0. `FeedStore` responds with change to have add button or not
 
 ### Store Listeners
 
