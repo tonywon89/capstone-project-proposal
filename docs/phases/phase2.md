@@ -23,12 +23,10 @@
 
 ### Actions
 * ApiActions.receiveAllFeeds -> triggered by ApiUtil
-* ApiActions.receiveSingleFeed
 * ApiActions.receiveCollectionFeed
 
 ### ApiUtil
 * ApiUtil.fetchAllFeeds
-* ApiUtil.fetchSingleFeed
 * ApiUtil.fetchCollectionFeed
 
 ## Gems/Libraries

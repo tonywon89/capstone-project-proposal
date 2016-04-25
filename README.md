@@ -196,7 +196,7 @@ FeedMyCuriosity is a web application inspired by Feedly that will be built using
 
 - [ ] make `FeedDetail` component
   - [ ] `FeedHeader`
-  - [ ] `Add ArticleDateIndex`
+  - [ ] `ArticleDateIndex`
 - [ ] style `FeedDetail`
 - [ ] make it appear in `PopOutDetails`
 

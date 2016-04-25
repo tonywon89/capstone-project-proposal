@@ -28,16 +28,6 @@
 * CollectionActions.updateCollection
 * CollectionActions.destroyCollection
 
-* ArticleActions.receiveArticle
-* ArticleActions.removeArticle
-
-* ApiActions.notifySave -> for articles
-* ApiActions.removeCollectionArticle
-
 ### ApiUtil
-
-* ApiUtil.saveArticle
-* ApiUtil.unsaveArticle
-* ApiUtil.associateArticle
 
 ## Gems/Libraries
